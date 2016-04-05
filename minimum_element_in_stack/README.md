@@ -1,4 +1,4 @@
-## Finding the minimum element in a Stack
+## Find the minimum element in a Stack
 
 Use the [STL stack](http://www.cplusplus.com/reference/stack/stack/) and its provided functionality to find the minimum element in a stack.
 

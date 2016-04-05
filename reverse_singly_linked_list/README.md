@@ -1,4 +1,4 @@
-## Reversing a Singly Linked List
+## Reverse a Singly Linked List
 
 You are required to write a member function for a linked list class that will effectively reverse the linked list. 
 
