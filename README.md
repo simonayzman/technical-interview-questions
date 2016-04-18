@@ -9,7 +9,10 @@ Here you will find the solutions to various technical interview questions.
 
 (4) [Generate a balanced Binary Search Tree]
 
+(5) [Compute the greatest common divisor]
+
 [Reverse a Singly Linked List]: <reverse_singly_linked_list/README.md>
 [Find minimum element in Stack]: <minimum_element_in_stack/README.md>
 [Test if Binary Tree is balanced]: <is_binary_tree_balanced/README.md>
 [Generate a balanced Binary Search Tree]: <generate_balanced_bst/README.md>
+[Compute the greatest common divisor]: <greatest_common_divisor/README.md>
