@@ -64,7 +64,7 @@ void Tree<T>::createTree(TreeNode<T>*& treeNode, const vector<T>& sortedVec, int
    {
       int mid = (end + start) / 2;
        
-      TreeNode<T>* treeNode = new TreeNode<T>;
+      treeNode = new TreeNode<T>;
       treeNode->data = sortedVec[mid];
 
       createTree(treeNode->left, sortedVec, start, mid - 1);
@@ -88,7 +88,7 @@ TreeNode<T>* Tree<T>::createTree(TreeNode<T>* treeNode, const vector<T>& sortedV
    {
       int mid = (end + start) / 2;
        
-      TreeNode<T>* treeNode = new TreeNode<T>;
+      treeNode = new TreeNode<T>;
       treeNode->data = sortedVec[mid];
 
       treeNode->left = createTree(treeNode->left, sortedVec, start, mid - 1);
