@@ -20,7 +20,8 @@ different times and the same script might be deployed to different origin machin
 
 #### Interconnected servers
 
-Assume that you're building a system of servers. You have a list of servers numbers (starting from 1) that represent the server names that have been taken. Find the earliest
+Assume that you're building a system of servers. You have a list of servers numbers (starting from 1)
+that represent the server names that have been taken. Find the earliest
 
 (Modification) Assume that you're trying to build a class NOT FINISHED*****
 

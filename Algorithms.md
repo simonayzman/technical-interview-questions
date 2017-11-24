@@ -295,7 +295,7 @@ Notes:
 
 Solution:
 
-(Ordered) hash map, mapping words to a linked list of integers, respresenting pages.
+(Ordered) hash map, mapping words to a linked list of integers, representing pages.
 
 
 #### Dictionary check
@@ -316,3 +316,51 @@ might appear multiple times throughout the book), find the first page the given 
 
 // Insert each pair into a binary search tree of pairs. O(log n) time.
 // Algorithm to find first instance of given keyword. O(log n) time.
+
+#### Understandability Index
+
+In order for a student to be considered as understanding a set of material in a textbook, they need to at least have read it X times. Given an ordered set of pages (or perhaps intervals), the number of times a single page must be read to be understood, and a stream of how the student read the pages (could be out of order, could be outside of the range).
+[Can be done backwards or forwards. Backwards takes up more space initially, but gives you a concrete stopping point.]
+
+
+[1,2,3,4,1,3,4,1,2,3,4,5,6,7,8,3,4,5,6,7]
+
+// Reading from page 1 to numberOfPages
+// pagesRead contains only the pages necessary to read
+bool doesUnderstand(vector<int> pagesRead,
+                    int numberOfTimesNecessaryToRead,
+                    int numberOfPages) {
+
+  if (pagesRead.size() < numberOfTimesNecessaryToRead * numberOfPages)
+    return false;
+
+  // mapping page numbers to number of times read
+  unordered_map<int, int> pagesReadCounters;
+
+  for (int i = 0; i < pagesRead.size(); ++i) {
+    int currentPage = pagesRead[i];
+    if (pagesReadCounters.count(currentPage) == 0) {
+      pagesReadCounters[currentPage] = 1;
+    } else {
+      pagesReadCounters[currentPage]++;
+    }
+  }
+
+  if (pagesReadCounters.size() < numberOfPages)
+    return false;
+
+  if (numberOfTimesNecessaryToRead == 1)
+    return true;
+
+  for (auto page: pagesReadCounters) {
+    int numberOfTimesCurrentPageHasBeenRead = pagesReadCounters[page];
+    if (numberOfTimesCurrentPageHasBeenRead < numberOfTimesNecessaryToRead)
+      return false;
+  }
+
+  return true;
+}
+
+#### Prerequisite Tree
+
+Assume a provided array of course numbers has the first course number be the course at hand and the remaining courses are its prerequisites. Say that you have an array of such arrays. Write a function that determines whether a student can take a specific course, given this array of arrays, the course desired, and all the courses the student previously took.
