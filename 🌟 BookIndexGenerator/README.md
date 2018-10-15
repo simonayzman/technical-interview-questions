@@ -4,4 +4,4 @@ Based on a book composed of words, generate an index of common words, followed b
 
 Modification 1: How do you deal with unwanted/useless/common words?
 
-\[[Solution](solution.cpp)\]
+\[[Solution](solution.js)\]
