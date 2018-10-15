@@ -7,4 +7,4 @@ Implement a data structure that accomplishes:
 3. Key existence confirmation in O(1) time
 4. Random key/value pair retrieval in O(1) time
 
-\[[Solution](solution.cpp)\]
+\[[Solution](solution.js)\]

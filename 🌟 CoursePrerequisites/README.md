@@ -34,4 +34,4 @@ Teaches: H, I
 
 Modification 1: How would you optimize for students?
 
-\[[Solution](solution.cpp)\]
+\[[Solution](solution.js)\]
