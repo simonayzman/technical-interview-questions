@@ -2,6 +2,7 @@
 
 Given a black and white image, represented as a multidimensional array of pixels where the color black is 0 and the color white is 1, and particular pixel coordinate, find the perimeter of the contiguous area occupied by the color at that pixel coordinate.
 
+```
 e.g.          col ---->
           0   1   2   3   4
         |---|-------|---|---|
@@ -13,6 +14,6 @@ row     |   |---|   |   |---|     contains the color 1.
         |   |   |---|   |   |
      3  | 0 | 1 | 0 | 1 | 0 |
         |---|---|---|---|---|
-
+```
 
 \[[Solution](solution.cpp)\]
