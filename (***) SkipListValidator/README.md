@@ -2,4 +2,12 @@
 
 Assume that you have a singly linked list that has nodes with an extra pointer called `skip`. Implement a function that validates that a given list is valid--no loops and `skip` always points forward in the linked list.
 
+```
+ _________      ____    
+|         ↓    |    ↓
+1 -> 2 -> 3 -> 4 -> 5 -> X
+     ↓    ↓         ↓
+     X    X         X
+```
+
 \[[Solution](solution.cpp)\]
