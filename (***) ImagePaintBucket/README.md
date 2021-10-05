@@ -6,7 +6,7 @@ Assume that you have an image composed of RGB colors. You need to implement the 
 
               col ---->
               
-          0   1   2   3   4
+            0   1   2   3   4
           |---|-------|---|---|
        0  | 0 | 1 | 0   0 | 1 |
 row       |   |---|       |---|     
