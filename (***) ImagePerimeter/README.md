@@ -6,14 +6,18 @@ Given a black and white image, represented as a multidimensional array of pixels
 e.g.          col ---->
           0   1   2   3   4
         |---|-------|---|---|
-     0  | 0 | 1   1 | 0 | 1 |     Assuming (row, col) format and 0-based indexes, pixel (3, 1)
-row     |   |---|   |   |---|     contains the color 1.
+     0  | 0 | 1   1 | 0 | 1 |     
+row     |   |---|   |   |---|     
  |   1  | 0   0 | 1 | 0   0 |
- |      |   |---|   |---|   |     You must find the perimeter of all of the 1's that occupy the
-\|/  2  | 0 | 1   1   1 | 0 |     contiguous shape started by the first indicated 1.
+ |      |   |---|   |---|   |     
+\|/  2  | 0 | 1   1   1 | 0 |     
         |   |   |---|   |   |
      3  | 0 | 1 | 0 | 1 | 0 |
         |---|---|---|---|---|
+        
+Assuming (row, col) format and 0-based indexes, pixel (3, 1) contains the color 1.
+
+You must find the perimeter of all of the 1's that occupy the contiguous shape started by the first indicated 1.
 ```
 
 \[[Solution](solution.cpp)\]
